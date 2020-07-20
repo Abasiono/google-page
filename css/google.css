@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+header{
+    float: right;
+}  
+header::after{
+    clear: both;
+    content: "";
+}
+ul{
+    list-style-type: none;  
+}
+.top li{
+    display: inline;
+}
+
+.top li a{
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+}
+
+i{
+    font-size: 22px;
+    color: grey;
+}
+
+.face{
+    font-size: 34px;
+    color: purple;
+}
+.goog{
+    text-align: center;
+   padding: 20px;
+   width: 50%;
+   margin: auto;
+}
+
+form{
+    text-align: center;
+}
+input[type=text]{
+    width:500px;
+    padding:10px;
+    border-radius: 20px;
+    border: 1px solid rgb(199, 199, 199);
+    
+}
+.select{
+    text-align: center;
+    padding: 15px;
+}
+button{
+    border: none;
+    background-color: rgb(218, 218, 218);
+    padding:10px;
+}
+button a{
+    text-decoration: none;
+    color:grey;
+}
+.info{
+    text-align: center;
+}
+.info a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer{
+    border:1px solid rgb(199, 199, 199);
+    text-align: left;
+    background-color: rgb(218, 218, 218);
+    color: grey;
+    padding: 7px;
+    width: 100%;
+    
+}
+.footer2{
+    background-color: rgb(218, 218, 218);
+    color: grey;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    margin: auto;
+}
+.footer2 a{
+    text-decoration: none;
+    color: gray;
+   
+}
+.footer2 li{
+    display: inline;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+@media screen and (max-width:600px){
+    input[type=text]{
+        width:100%;
+        padding:10px;
+        border-radius: 20px;
+        border: 1px solid rgb(199, 199, 199);
+        
+    }
+    .goog{
+        text-align: center;
+       padding: 30px;
+       width: 90%;
+       margin: auto;
+    }
+    .info{
+        font-size: 12px;
+    }
+    .footer1,.footer2{
+        font-size: 12px;
+    }
+    .left,.right{
+        float: none;
+        padding: 5px;
+    }
+    .footer2 li{
+        display: block;
+    }
+}
